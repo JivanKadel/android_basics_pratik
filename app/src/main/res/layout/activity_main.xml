@@ -16,15 +16,76 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your user name"
+        android:hint="Enter your phone number"
         android:inputType="phone"
         android:padding="12dp"
         android:layout_margin="10dp"
-
+        android:gravity="center"
         />
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Select your Gender"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <RadioButton
+            android:layout_marginEnd="30dp"
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            />
+
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/cbNewsletter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscribe to Newsletter"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:checked="true"/>
+    <CheckBox
+        android:id="@+id/cbHobbyFootball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playing Football"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/cbHobbyVolleyball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playing Vollyball"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:checked="false"/>
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Submit"/>
+
+
 
 </LinearLayout>
