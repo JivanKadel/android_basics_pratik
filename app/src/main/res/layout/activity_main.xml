@@ -6,22 +6,44 @@
     android:id="@+id/main">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to Samriddhi"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello From Pratik"
-        />
-
+        android:layout_marginLeft="20dp"
+        android:text="Enter Your Username"/>
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your phone number"
-        android:inputType="phone"
+        android:hint="Enter your username"
+        android:inputType="text"
         android:padding="12dp"
         android:layout_margin="10dp"
         android:gravity="center"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Your Password"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,41 +72,56 @@
             />
 
     </RadioGroup>
-    <CheckBox
-        android:id="@+id/cbNewsletter"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subscribe to Newsletter"
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:padding="8dp"
-        android:checked="true"/>
+        android:text="Hobbies:"
+        android:layout_marginLeft="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
     <CheckBox
-        android:id="@+id/cbHobbyFootball"
+        android:id="@+id/cbSinging"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Playing Football"
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:padding="8dp"
-        android:checked="false"/>
-    <CheckBox
-        android:id="@+id/cbHobbyVolleyball"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Playing Vollyball"
+        android:text="Singing"
         android:textSize="16sp"
         android:textColor="#000000"
         android:padding="8dp"
         android:checked="false"/>
 
+    <CheckBox
+        android:id="@+id/cbDancing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dancing"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:checked="false"/>
+
+    <CheckBox
+        android:id="@+id/cbPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playing"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:checked="false"/>
+    </LinearLayout>
 
     <Button
         android:layout_margin="10dp"
         android:padding="20dp"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Submit"/>
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:width="100dp"/>
 
 
 

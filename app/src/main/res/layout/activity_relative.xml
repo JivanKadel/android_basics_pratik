@@ -6,22 +6,103 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelTitle"
+        android:text="Welcome to Samriddhi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginLeft="20dp"/>
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/username"/>
+        android:layout_below="@id/labelTitle"
+        android:text="@string/username"
+        android:layout_marginLeft="20dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/userText"
         android:hint="Enter your username"
         android:layout_below="@+id/username"
+        android:layout_marginLeft="20dp"
         />
     <TextView
+        android:id="@+id/userpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/labelSamriddhi"
-        android:layout_toEndOf="@+id/username"
-        android:text="Samridhhi"/>
+        android:layout_below="@id/userText"
+        android:layout_marginLeft="20dp"
+        android:text="Password"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPassword"
+        android:hint="Enter your password"
+        android:layout_below="@+id/userpassword"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/userGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userPassword"
+        android:layout_marginLeft="20dp"
+        android:text="Gender"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userGender"
+        android:id="@+id/Male"
+        android:text="Male"
+        android:layout_marginLeft="20dp"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Male"
+        android:layout_below="@id/userGender"
+        android:id="@+id/Female"
+        android:text="Female"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/userHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Male"
+        android:layout_marginLeft="20dp"
+        android:text="Hobbies:"/>
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Singing"
+    android:layout_below="@id/userHobbies"
+    android:text="Singing"
+    android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dancing"
+        android:layout_below="@id/userHobbies"
+        android:layout_toRightOf="@id/Singing"
+        android:text="Dancing"
+        android:layout_marginLeft="20dp"/>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Playing"
+    android:layout_below="@id/userHobbies"
+    android:layout_toRightOf="@id/Dancing"
+    android:text="Playing"
+    android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/Dancing"
+        android:layout_gravity= "center"
+        />
 </RelativeLayout>
