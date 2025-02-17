@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/absLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AbsoluteViewActivity">
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_x="-2dp"
+        android:layout_y="7dp"
+        android:background="@color/green"
+        android:text="This is value one"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        android:layout_x="150dp"
+        android:textColor="@color/white"
+        android:text="This is value two"
+        android:layout_y="150dp"/>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/green"
+        android:layout_x="300dp"
+        android:textColor="@color/white"
+        android:text="This is value three"
+        android:layout_y="300dp"/>
+
+</AbsoluteLayout>
