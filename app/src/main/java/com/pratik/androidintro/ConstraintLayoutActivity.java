@@ -2,6 +2,8 @@ package com.pratik.androidintro;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -28,6 +30,7 @@ public class ConstraintLayoutActivity extends AppCompatActivity {
 
     List<String> items= Arrays.asList("Kathmandu","Changragiri","Nagarkot","Pokhara", "Lumbini");
 
+//    String [] places= getResources().getStringArray(R.array.tour_places);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +44,7 @@ public class ConstraintLayoutActivity extends AppCompatActivity {
         fullName= findViewById(R.id.editNameInput);
         phoneNumber= findViewById(R.id.editPhoneInput);
 
-        Spinner spinnerDropdown;
+        spinnerDropdown= findViewById(R.id.spinner);
 
 
         submitButton = findViewById(R.id.btn1);
@@ -62,6 +65,19 @@ public class ConstraintLayoutActivity extends AppCompatActivity {
                     System.out.println(e);
                 }
 
+
+            }
+        });
+        ArrayAdapter<String> adapter= new ArrayAdapter<>(ConstraintLayoutActivity.this, android.R.layout.simple_spinner_dropdown_item,items);
+        spinnerDropdown.setAdapter(adapter);
+        spinnerDropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(ConstraintLayoutActivity.this, items.get(position), Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
         });
