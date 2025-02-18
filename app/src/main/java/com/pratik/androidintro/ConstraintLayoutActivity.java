@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,12 +15,19 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
 
 public class ConstraintLayoutActivity extends AppCompatActivity {
     TextView text1;
     TextView text2;
     EditText fullName, phoneNumber;
     Button submitButton;
+
+    Spinner spinnerDropdown;
+
+    List<String> items= Arrays.asList("Kathmandu","Changragiri","Nagarkot","Pokhara", "Lumbini");
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +40,8 @@ public class ConstraintLayoutActivity extends AppCompatActivity {
 
         fullName= findViewById(R.id.editNameInput);
         phoneNumber= findViewById(R.id.editPhoneInput);
+
+        Spinner spinnerDropdown;
 
 
         submitButton = findViewById(R.id.btn1);
