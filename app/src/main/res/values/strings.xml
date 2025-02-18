@@ -3,4 +3,12 @@
     <string name="username">Username</string>
     <string name="enter_full_name">Enter Your Username Homie</string>
     <string name="phone_input">Lemme Get Your Number Homie</string>
+
+    <string-array name="tour_places">
+        <item>Kathmandu</item>
+        <item>Changragiri</item>
+        <item>Nagarkot</item>
+        <item>Pokhara</item>
+        <item>Lumbini</item>
+    </string-array>
 </resources>
